@@ -63,10 +63,10 @@ function Carrossel(props) {
             </div>
             <div className="descricaoCarrossel">
               <SobreDescricao className="descCard">
-                            Pedro lacerda 
-                            Idade: 19 anos
-                            Estudante: Desenvolvedor Full Stack  
-                            Para mais projetos acesse:
+                            Pedro lacerda <br/>
+                            Idade: 19 anos<br/>
+                            Estudante: Desenvolvedor Full Stack  <br/>
+                            Para mais projetos acesse:<br/>
                           <li><a href="https://github.com/pedrocarius7 " >GitHub</a></li> 
               </SobreDescricao>
             </div>
@@ -80,10 +80,10 @@ function Carrossel(props) {
             <div className="descricaoCarrossel">
               <SobreDescricao className="descCard">
 
-                            Matheus Carius
-                            Idade: 26 anos
-                            Estudante: Desenvolvedor Full Stack
-                            Para mais projetos acesse:
+                            Matheus Carius<br/>
+                            Idade: 26 anos<br/>
+                            Estudante: Desenvolvedor Full Stack<br/>
+                            Para mais projetos acesse:<br/>
                           <li><a href="https://github.com/MatheusCarius" >GitHub</a></li> 
                           
               </SobreDescricao>
@@ -98,10 +98,10 @@ function Carrossel(props) {
             <div className="descricaoCarrossel">
               <SobreDescricao className="descCard">
 
-                            Paulo Henrique Mayworm
-                            Idade: 33 anos
-                            Estudante: Desenvolvedor Full Stack
-                            Para mais projetos acesse:
+                            Paulo Henrique Mayworm<br/>
+                            Idade: 33 anos<br/>
+                            Estudante: Desenvolvedor Full Stack<br/>
+                            Para mais projetos acesse:<br/>
                           <li><a href="http://github.com/PauloMayworm" >GitHub</a></li>                     
                                                
               </SobreDescricao>
@@ -116,10 +116,10 @@ function Carrossel(props) {
             <div className="descricaoCarrossel">
               <SobreDescricao className="descCard">
 
-                            Hector de Oliveira
-                            Idade: 26 anos
-                            Estudante: Desenvolvedor Full Stack
-                            Para mais projetos acesse:
+                            Hector de Oliveira<br/>
+                            Idade: 26 anos<br/>
+                            Estudante: Desenvolvedor Full Stack<br/>
+                            Para mais projetos acesse:<br/>
                             <li><a href="http://github.com/HectorBonilhaa" >GitHub</a></li>  
               </SobreDescricao>
             </div>
@@ -133,10 +133,10 @@ function Carrossel(props) {
             <div className="descricaoCarrossel">
               <SobreDescricao className="descCard">
              
-                            Michael Fernandes
-                            Idade: 26 anos
-                            Estudante: Desenvolvedor Full Stack
-                            Para mais projetos acesse:
+                            Michael Fernandes<br/>
+                            Idade: 26 anos<br/>
+                            Estudante: Desenvolvedor Full Stack<br/>
+                            Para mais projetos acesse:<br/>
                             
                             <li><a class="git-link"  href="http://github.com/michaelfernan" >GitHub</a></li>                     
                           
