@@ -21,4 +21,21 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     color: #FA8072;
 
   }
+  `;
+
+  export const Button   = styled.div`
+
+
+  .buttonHome{
+ 
+ color:  #FA8072;
+ background: black;
+ border-radius: 10px;
+ display:flex;
+ justify-content: center;
+ :hover{
+background:  #FA8072;
+color: black;
+
+}
 `;

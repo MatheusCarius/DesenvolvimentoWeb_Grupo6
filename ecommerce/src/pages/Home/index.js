@@ -1,18 +1,33 @@
 
+import {Container, Button} from "./styled"
+import {useNavigate} from "react-router-dom"
 
-import {Container} from "./styled"
 
 
 
 export function Home(){
 
 
+  const navigate = useNavigate();
+
+    function handleGoProducts() {
+        navigate("/sobre", {state: {
+
+        }});
+    }
+
+  
 return (
     <> 
     <Container>
-      <h1 className="title">Serra Shop</h1>
-     
+      <h1 className="title">Serra Shop</h1>    
     </Container>
+    
+    <Button>
+    <button className="buttonHome"  style={{  width: 60, height: 30, marginTop: 10 }} onClick={handleGoProducts}>Sobre</button>
+    </Button>
+   
+    
   
         </>
   );
