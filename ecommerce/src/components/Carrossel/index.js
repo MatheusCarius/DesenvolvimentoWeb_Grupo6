@@ -65,7 +65,7 @@ function Carrossel(props) {
               <SobreDescricao className="descCard">
                             Pedro lacerda 
                             Idade: 19 anos
-                            Estudante:   
+                            Estudante: Desenvolvedor Full Stack  
                             Para mais projetos acesse:
                           <li><a href="https://github.com/pedrocarius7 " >GitHub</a></li> 
               </SobreDescricao>
@@ -82,7 +82,7 @@ function Carrossel(props) {
 
                             Matheus Carius
                             Idade: 26 anos
-                            Estudante:   
+                            Estudante: Desenvolvedor Full Stack
                             Para mais projetos acesse:
                           <li><a href="https://github.com/MatheusCarius" >GitHub</a></li> 
                           
@@ -100,7 +100,7 @@ function Carrossel(props) {
 
                             Paulo Henrique Mayworm
                             Idade: 33 anos
-                            Estudante:  
+                            Estudante: Desenvolvedor Full Stack
                             Para mais projetos acesse:
                           <li><a href="http://github.com/PauloMayworm" >GitHub</a></li>                     
                                                
@@ -118,7 +118,7 @@ function Carrossel(props) {
 
                             Hector de Oliveira
                             Idade: 26 anos
-                            Estudante 
+                            Estudante: Desenvolvedor Full Stack
                             Para mais projetos acesse:
                             <li><a href="http://github.com/HectorBonilhaa" >GitHub</a></li>  
               </SobreDescricao>
@@ -135,7 +135,7 @@ function Carrossel(props) {
              
                             Michael Fernandes
                             Idade: 26 anos
-                            Estudant
+                            Estudante: Desenvolvedor Full Stack
                             Para mais projetos acesse:
                             
                             <li><a class="git-link"  href="http://github.com/michaelfernan" >GitHub</a></li>                     
