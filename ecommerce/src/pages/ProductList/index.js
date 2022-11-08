@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import productService from "../../Services/requests/productService";
-import { useNavigate } from "react-router-dom";
-
+import { useNavigate, Link } from "react-router-dom";
+import {ProdutoButton, ProdutoImg,ProdutoDescricao,ContainerProduto} from  "./style";
+import { Container } from "../../styles/global";
 
 export function ProductList() {
   
@@ -27,13 +28,14 @@ export function ProductList() {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div>
       <h1>Produtos</h1>
-
+    
       {product.map((res) => {
-        return (
+        return (  
+        <ContainerProduto>
           <div key={res.id}>
-            <img src={res.fotoLink} alt="Foto do produto" width="200px" />
+            <ProdutoImg img src={res.fotoLink} alt="Foto do produto" width="200px" />
             <br></br>
             <span>{res.nome}</span>
             <br></br>
@@ -41,9 +43,10 @@ export function ProductList() {
             <br></br>
             <span>R$ {res.valor},00</span>
             <br></br>
-            <button onClick={()=> handleSelectId(res.id)}>Ver Produto</button>
+            <ProdutoButton button onClick={()=> handleSelectId(res.id)}>Ver Produto</ProdutoButton>
             <br></br>
           </div>
+          </ContainerProduto>
         );
       })}
     </div>
