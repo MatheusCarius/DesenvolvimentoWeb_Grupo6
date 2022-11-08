@@ -17,11 +17,12 @@ export const Navbar = () => {
     <NavbarSection>
       <NavbarContainer>
         <Link to="/" style={{textDecoration: "none"}}><LinkHome><img src={Logo} alt="logo" width="40px" />
-          <NomeLogo>Grupo6</NomeLogo></LinkHome></Link>
+          <NomeLogo>SerraShop</NomeLogo></LinkHome></Link>
           <NavbarLista>          
           <Link to="/produto" style={{textDecoration: "none"}}><NavbarItem>Produtos</NavbarItem></Link>
           <Link to="/carrinho" style={{textDecoration: "none"}}><NavbarItem>Carrinho</NavbarItem></Link>
           <Link to="/sobre" style={{textDecoration: "none"}}><NavbarItem>Sobre</NavbarItem></Link>
+          <Link to="/Administracao" style={{textDecoration: "none"}}><NavbarItem>Login</NavbarItem></Link>
                 
           
         </NavbarLista>

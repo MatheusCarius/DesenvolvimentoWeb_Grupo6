@@ -15,9 +15,9 @@ export function AdmCliente(props){
     }, []);
 
     function carregarAPI() {
-        const getPedidoAPI = async () => {
+        const getCliente = async () => {
             try{
-                const res = await statusAPI.get("cliente");
+                const res = await api.get("cliente");
                 console.log(res)
                 setStatusAPI(res.status)
                 setListaClientes(res.data);
@@ -28,7 +28,7 @@ export function AdmCliente(props){
                 }
             }
         };
-        getPedidoAPI();
+        getCliente();
     }
 
     const verificarResponse = () => {

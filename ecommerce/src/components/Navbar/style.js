@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 
 export const NavbarSection = styled.section`
-    position: fixed;
+    color: whitesmoke;
+    font-weight: 600;
     top: 0;
     left: 0;
     z-index: 2;
@@ -10,12 +11,17 @@ export const NavbarSection = styled.section`
     justify-content: center;
     align-items: center;
     padding-inline: 2rem;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
-    background-color: #FA8022;
+
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 `;
 
 export const NavbarContainer = styled.nav`
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,10 +41,10 @@ export const NavbarLista = styled.ul`
 `;
 
 export const NavbarItem = styled.li`
+    color: whitesmoke;
     list-style: none;
     font-size: 1.8rem;
     text-decoration: none;
-    color: var(--background);
     transition: 0.5s;
     &:hover{
         transform: scale(130%);
@@ -46,6 +52,8 @@ export const NavbarItem = styled.li`
 `;
 
 export const LinkHome = styled.div`
+    color: whitesmoke;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,14 +66,13 @@ export const LinkHome = styled.div`
 
 export const NomeLogo = styled.p`
     display: block;
-    color: var(--background);
     font-size: 1.8rem;
     margin-bottom: 0;
 `;
 
 export const MenuOption = styled.button`
     width: 70vw;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,10 +82,8 @@ export const MenuOption = styled.button`
     text-decoration: none;
     color: var(--background);
 
-    background-color: var(--primary-color);
     border-radius: 1rem;
     &:hover{
-        background-color: var(--secondary-color);
     }
 `;
 
@@ -92,8 +97,7 @@ export const MenuOptionLogin = styled.button`
 
     font-size: 3rem;
     text-decoration: none;
-    color: var(--background);
-
+    color: whitesmoke;
     background-color: var(--secondary-color);
     border-radius: 1rem;
     &:hover{
