@@ -1,7 +1,7 @@
 
-import { Container, Button } from "./styled"
+import { Container, ImageDesktop } from "./styled"
 import { useNavigate } from "react-router-dom"
-import { AdmPedido } from "../PedidoADM";
+import FotoHomeDesk from "../../Sources/img/principal.png";
 
 
 export function Home() {
@@ -22,8 +22,10 @@ export function Home() {
   return (
     <>
       <Container>
-        <h1 className="title">Serra Shop</h1>
-        <AdmPedido/>
+      <ImageDesktop
+        src={FotoHomeDesk}
+        alt="principal"
+      />
       </Container>
 
 

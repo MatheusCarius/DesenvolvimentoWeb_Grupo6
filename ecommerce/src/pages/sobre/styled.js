@@ -22,10 +22,6 @@ export const SobreMain = styled.div`
   margin-top: 5em;
   font-size: 3em;
 }
-
-
-
-
 `;
 
 
