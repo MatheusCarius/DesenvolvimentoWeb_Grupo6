@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ListaPedidos = styled.div`
+width: 100%;
+height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,9 +16,8 @@ export const ListaPedidos = styled.div`
 `;
 
 export const CardPedido = styled.div`
-  width: 370px;
-  font-size: 1.2rem;
-  font-weight: 600;
+  width: 300px;
+  font-size: 1.6rem;
   padding: 20px;
   border-radius: 10px;  
 
@@ -30,6 +31,7 @@ export const BoxButtons = styled.div`
   display: flex;
   justify-content: center;
   gap: 5px;
+  padding-top:5px ;
 `;
 
 export const EditPedido = styled.button`
@@ -46,15 +48,16 @@ export const EditPedido = styled.button`
 
 export const DeletePedido = styled.button`
   width: 40%;
-  height: 2em;
+  height: 1.2rem;
   border-radius: 10px;
   background-color: #8e1600;
-color: whitesmoke;  
-font-weight: 600;
-border: none;
+  color: white;
+  font-weight: 600;
+  border: none;
   &:hover{
-    background-color: #ec7372;
-    color: black;
+    background-color: red;
+    color: whitesmoke;
+    cursor: pointer;
   }
 `;
 
@@ -64,6 +67,7 @@ export const BoxPedido = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 `;
 
 export const BotaoVoltar = styled.div`

@@ -37,11 +37,11 @@ export function TabelaPedidos(props){
                                     </CardPedido>
                         }) : ''}                        
                 </ListaPedidos>
-                <BotaoVoltar>
+                {/* <BotaoVoltar>
                     <button onClick={() => navigate("/painel_administrativo")}>
                         Voltar
                     </button>
-                </BotaoVoltar>
+                </BotaoVoltar> */}
             </BoxPedido>
         </>
     );
