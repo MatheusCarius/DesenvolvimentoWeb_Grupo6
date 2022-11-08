@@ -23,10 +23,10 @@ export const SobreMain = styled.div`
   font-size: 3em;
 }
 
-}
 
 
-`
+
+`;
 
 
 

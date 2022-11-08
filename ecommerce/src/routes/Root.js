@@ -1,12 +1,11 @@
 import React from "react";
-import { Routes, Route, Navigate, Outlet } from "react-router-dom";
-import { Home } from "../pages/Home";
-import { Categoria} from "../pages/Category";
-import { NotFound } from '../pages/NotFound';
-import { Sobre } from '../pages/sobre/Index';
 import { Routes, Route } from "react-router-dom";
-import AdmPedido from '../pages/AdmPedido'
-import { Carrinho } from '../pages/Carrinho'
+import { Home } from "../pages/Home";
+import { Categoria } from "../pages/CategoryADM";
+import { NotFound } from "../pages/NotFound";
+import {Sobre} from "../pages/sobre";
+import {AdmPedido} from '../pages/PedidoADM';
+import { Carrinho } from '../pages/Carrinho';
 
 
 export const PrivateRoutes = () => {
@@ -28,19 +27,19 @@ export const Root =() =>{
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/pedido" element={<AdmPedido/>}/>
-        <Route path="/carrinho" element={<Carrinho/>}/>
+        {/* <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/catalogo/:categoria&:id" element={<Categorias />} />
         <Route path="/catalogo/:categoria&:idCategoria/:idProduto" element={<Produto />} />
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/login" element={<Login/>}/> */}
         
         <Route element={<PrivateRoutes/>}>
-          <Route path="/painel_administrativo/produto" element={<AdmProduto/>}/>      
+          {/* <Route path="/painel_administrativo/produto" element={<AdmProduto/>}/>      
           <Route path="/categoria" element={<Categoria/>}/>
           <Route path="/painel_administrativo" element={<PainelAdministrativo/>}/>
           <Route path="/painel_administrativo/pedido" element={<AdmPedido/>}/>
-          <Route path="/painel_administrativo/cliente" element={<AdmCliente/>}/>
+          <Route path="/painel_administrativo/cliente" element={<AdmCliente/>}/> */}
         </Route>
-   
         </Routes>
+   
     )
     }

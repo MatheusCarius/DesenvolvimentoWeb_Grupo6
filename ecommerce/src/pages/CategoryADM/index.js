@@ -3,7 +3,7 @@ import { api } from "../../Services/api/api";
 import { Container, Titulo } from "../../styles/global";
 import { Input, Form, ButtonContainer, RegistroButton } from "./styled";
 import { Popup } from "../../components/Popup";
-import { TabelaCategorias } from "../TabelasCategory";
+import { TabelaCategorias } from "../../components/TabelasCategory";
 import BadRequest from "../../components/BadRequest";
 import { Loader } from "../../components/Loader";
 

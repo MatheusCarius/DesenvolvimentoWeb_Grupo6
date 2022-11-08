@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { SobreDescricao } from "../../pages/sobre/style";
-import { CarrosselStyle } from "./style";
+import { SobreDescricao } from "../../pages/sobre/styled";
+import { CarrosselStyle } from "./styled";
 import ImagemPedro from "../../Sources/img/identidadePedro.jpg";
 import ImagemMatheus from "../../Sources/img/identidadeHector.jpg";
 import ImagemPaulo from "../../Sources/img/Paulo.jpg";
