@@ -2,29 +2,33 @@ import React from "react";
 import { Routes, Route, Navigate, Outlet } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Categoria} from "../pages/Category";
+import { NotFound } from '../pages/NotFound';
+import { Sobre } from '../pages/sobre/Index';
+import { Routes, Route } from "react-router-dom";
+import AdmPedido from '../pages/AdmPedido'
+import { Carrinho } from '../pages/Carrinho'
 
 
 export const PrivateRoutes = () => {
-    function isAuthenticated () {
-  
-      if(localStorage.getItem('admin') !== null){
-        return true;
-      }else{
-        return false;
-      }  
+  function isAuthenticated() {
+    if (localStorage.getItem("admin") !== null) {
+      return true;
+    } else {
+      return false;
     }
-  
-    return (  
-      isAuthenticated() ? <Outlet/> : <Navigate to="/admlogin"/>
-    )
-  } 
+  }
+}
 
 export const Root =() =>{
     
     return (
         <Routes>
+       
+        <Route path='*' element={<NotFound/>} />
         <Route path="/" element={<Home />} />
-
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/pedido" element={<AdmPedido/>}/>
+        <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/catalogo/:categoria&:id" element={<Categorias />} />
         <Route path="/catalogo/:categoria&:idCategoria/:idProduto" element={<Produto />} />
         <Route path="/login" element={<Login/>}/>
@@ -39,4 +43,4 @@ export const Root =() =>{
    
         </Routes>
     )
-  }
+    }
