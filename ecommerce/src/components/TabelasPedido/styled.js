@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ListaPedidos = styled.div`
+width: 100%;
+height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +31,7 @@ export const BoxButtons = styled.div`
   display: flex;
   justify-content: center;
   gap: 5px;
+  padding-top:5px ;
 `;
 
 export const EditPedido = styled.button`
@@ -45,22 +48,26 @@ export const EditPedido = styled.button`
 
 export const DeletePedido = styled.button`
   width: 40%;
+  height: 1.2rem;
   border-radius: 10px;
   background-color: #8e1600;
   color: white;
+  font-weight: 600;
   border: none;
   &:hover{
-    background-color: #ec7372;
-    color: black;
+    background-color: red;
+    color: whitesmoke;
+    cursor: pointer;
   }
 `;
 
 
 export const BoxPedido = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 `;
 
 export const BotaoVoltar = styled.div`

@@ -1,6 +1,7 @@
 
 import { Container, Button } from "./styled"
 import { useNavigate } from "react-router-dom"
+import { AdmPedido } from "../PedidoADM";
 
 
 export function Home() {
@@ -22,14 +23,11 @@ export function Home() {
     <>
       <Container>
         <h1 className="title">Serra Shop</h1>
+        <AdmPedido/>
       </Container>
 
 
-      <Button>
-        <button className="buttonHome" onClick={handleGoProducts}>Sobre</button><br />
-        <button className="buttonHome" onClick={() => navigate("/pedido")}>Pedidos</button>
-      </Button>
-
+     
 
 
 
