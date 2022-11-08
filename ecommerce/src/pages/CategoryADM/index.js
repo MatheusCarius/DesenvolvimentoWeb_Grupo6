@@ -5,6 +5,7 @@ import { Input, Form, ButtonContainer, RegistroButton } from "./styled";
 import { Popup } from "../../components/Popup";
 import { TabelaCategorias } from "../TabelasCategory";
 import BadRequest from "../../components/BadRequest";
+import { Loader } from "../../components/Loader";
 
 
 
@@ -12,7 +13,6 @@ export const Categoria = () =>{
     const [listaCategorias, setListaCategorias] = useState([]);
     const [nome, setNome] = useState("");
     const [descricao, setDescricao] = useState("");
-    const [linkImagem, setLinkImagem] = useState("");
     const [statusAPI, setStatusAPI] = useState(0)
     const [isConfirmado, setConfirmado] = useState(false);
     const [requisitarGet, setRequisitarGet] = useState(false);
@@ -51,6 +51,12 @@ export const Categoria = () =>{
         setRequisitarGet(!requisitarGet)
      }
 
+     const handleSubmit = (event) => {
+        event.preventDefault();
+        setNome("");
+        setDescricao("");
+        
+      };
     
 
      const verificarResponse = () => {
@@ -68,14 +74,16 @@ export const Categoria = () =>{
      }
 
      return(
+        
         <Container>
-            <Titulo>Cadastro Categoria</Titulo>
-            <Form >
+            <Titulo>Cadastrar Categoria</Titulo>
+            <Form onSubmit={handleSubmit}>
             <Input type="text" placeholder="Nome da Categoria" onChange={(event) => setNome(event.target.value)} value={nome}/>
             <Input type="text" placeholder="Descrição da Categoria" onChange={(event) => setDescricao(event.target.value)} value={descricao}/>
             <ButtonContainer>
-                <RegistroButton type="submit" value="Cadastrar" onClick={(e) => {
-                    e.preventDefault();
+                <RegistroButton type="submit" value="Cadastrar" onClick={() => {
+                   
+                   
                          return setConfirmado(!isConfirmado);
                      }}/>
             </ButtonContainer>

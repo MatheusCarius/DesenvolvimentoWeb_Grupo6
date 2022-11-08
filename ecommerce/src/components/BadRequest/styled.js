@@ -10,6 +10,7 @@ export const BoxBadStyle = styled.div`
     img {
         width: 30em;
         height: 30em;
+    
     }
 
     .mensagemErro {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const PopupStyle = styled.div`
-background-color: rgba(0, 0, 0, 0.5);
+background-color: rgba(0, 0, 0, 0.6);
 
 display: flex;
 
@@ -17,10 +17,12 @@ align-items: center;
 z-index: 5;
 
 .popup-tela {
-    background-color: gray;
 
-    display: flex;
-    flex-direction: column;
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: whitesmoke;
+
+  flex-direction: column;
 
     padding: 40px;
     width: 55em;
@@ -44,10 +46,12 @@ z-index: 5;
 .popup-tela .botoes {
     display: flex;
     gap: 20%;
+    
+    justify-content: center;
 }
 
 .popup-tela .botoes button {
-    background-color: var(--secondary-color);
+ color: green;
 
     font-size: 1.3em;
 
@@ -60,11 +64,12 @@ z-index: 5;
     transition: 250ms;
 }
 
+
 .popup-tela .botoes button:hover {
-    background-color: var(--primary-color);
 }
 
 `;
+
 
 export const Form = styled.form`
   display: flex;
@@ -95,10 +100,11 @@ export const RegistroButton = styled.button`
   height: 3rem;
   width: 8em;
   font-size: 1.5rem;
-  background-color: var(--secondary-color);
+  background-color: lightgreen;
   border-radius: 10px;
   &:hover {
-    background-color: #bb5a21;
+    background-color: green;
+    cursor: pointer;
   }
 `;
 
@@ -106,9 +112,12 @@ export const CancelarButton = styled.button`
     height: 3rem;
     width: 8em;
     font-size: 1.5rem;
-    background-color: var(--secondary-color);
     border-radius: 10px;
+    background-color: lightcoral;
+    
     &:hover {
-      background-color: #bb5a21;
+      background-color: darkred;
+      cursor: pointer;
+
     }
 `;
