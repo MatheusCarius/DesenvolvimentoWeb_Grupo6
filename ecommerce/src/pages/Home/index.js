@@ -24,8 +24,10 @@ return (
     </Container>
     
     <Button>
-    <button className="buttonHome"  style={{  width: 60, height: 30, marginTop: 10 }} onClick={handleGoProducts}>Sobre</button>
+    <button className="buttonHome"  style={{  width: 60, height: 30, marginTop: 10 }} onClick={handleGoProducts}>Sobre</button><br/>
+    <button className="buttonHome" style={{  width: 60, height: 30, marginTop: 10 }} onClick={() => navigate("/pedido")}>Pedidos</button>
     </Button>
+
    
     
   
