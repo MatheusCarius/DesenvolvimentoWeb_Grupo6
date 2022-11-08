@@ -39,3 +39,13 @@ color: black;
 }
   }
 `;
+export const ImageDesktop = styled.img`
+    margin-top: 2rem;
+    display: none;
+    
+
+    @media (min-width: 1024px){
+        display: block;
+        padding-inline: 2%;    
+    }
+`;

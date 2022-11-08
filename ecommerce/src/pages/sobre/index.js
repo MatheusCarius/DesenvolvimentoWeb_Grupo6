@@ -27,7 +27,7 @@ export const Sobre = (props) => {
        
 
         <Container className='sobre'>
-            <Titulo className='titulo'> Serra  Shop</Titulo>
+            <Titulo className='titulo'> Serra </Titulo>
             <SobreDescricao>
                 Trabalho Final desenvolvido como requisito para aprovação da
                 disciplina desenvolvimento web!

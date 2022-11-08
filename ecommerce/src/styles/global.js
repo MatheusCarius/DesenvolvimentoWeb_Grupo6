@@ -127,7 +127,7 @@ export const SobreMain = styled.div`
 }
 
 .titulo {
-  margin-top: 5em;
+  margin-top: 1em;
   font-size: 3em;
 }
 .buttonHome{
