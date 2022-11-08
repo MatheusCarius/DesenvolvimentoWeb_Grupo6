@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import productService from "../../Services/requests/productService";
 import { useNavigate, Link } from "react-router-dom";
-
+import {ProdutoButton, ProdutoImg,ProdutoDescricao,ContainerProduto} from  "./style";
+import { Container } from "../../styles/global";
 
 export function ProductList() {
   
@@ -27,12 +28,14 @@ export function ProductList() {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div>
       <h1>Produtos</h1>
-
       {product.map((res) => {
         return (
-          <div key={res.id}>
+         <ContainerProduto>
+          <div key={res.id}> 
+          <ProdutoImg img src={res.fotoLink} alt="Foto do produto" width="200px" />
+            <ProdutoDescricao>
             <span>Serial: {res.id}</span>
             <br></br>
             <span>Nome: {res.nome}</span>
@@ -48,12 +51,10 @@ export function ProductList() {
             <span>Funcionário: {res.nomeFuncionario}</span>
             <br></br>
             <span>Data Fabricação: {res.dataFabricacao}</span>
-            <br></br>
-            <img src={res.fotoLink} alt="Foto do produto" width="200px" />
-            <br></br>
-            <button onClick={()=> handleSelectId(res.id)}>Ver Produto</button>
-            <br></br>
+            </ProdutoDescricao>
+          <ProdutoButton button onClick={()=> handleSelectId(res.id)}>Ver Produto</ProdutoButton>
           </div>
+          </ContainerProduto>
         );
       })}
     </div>
