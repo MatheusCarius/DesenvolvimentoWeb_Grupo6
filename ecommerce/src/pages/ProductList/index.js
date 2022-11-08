@@ -9,7 +9,7 @@ export function ProductList() {
   const navigate = useNavigate();
 
   function handleSelectId(Id) {
-    navigate("/productPage", {state: {
+    navigate("/produto-view", {state: {
         id: Id
     }});
 }
