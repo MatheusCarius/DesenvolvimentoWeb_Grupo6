@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { SobreDescricao } from "../../pages/sobre/styled";
 import { CarrosselStyle } from "./styled";
 import ImagemPedro from "../../Sources/img/identidadePedro.jpg";
-import ImagemMatheus from "../../Sources/img/identidadeHector.jpg";
+import ImagemMatheus from "../../Sources/img/identidadeMatheus.jpg";
 import ImagemPaulo from "../../Sources/img/Paulo.jpg";
 import ImagemHector from "../../Sources/img/identidadeHector.jpg";
 import ImagemMichael from "../../Sources/img/identidadeMichael.jpg";
