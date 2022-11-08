@@ -14,8 +14,9 @@ export const ListaPedidos = styled.div`
 `;
 
 export const CardPedido = styled.div`
-  width: 300px;
-  font-size: 1.6rem;
+  width: 370px;
+  font-size: 1.2rem;
+  font-weight: 600;
   padding: 20px;
   border-radius: 10px;  
 
@@ -45,10 +46,12 @@ export const EditPedido = styled.button`
 
 export const DeletePedido = styled.button`
   width: 40%;
+  height: 2em;
   border-radius: 10px;
   background-color: #8e1600;
-  color: white;
-  border: none;
+color: whitesmoke;  
+font-weight: 600;
+border: none;
   &:hover{
     background-color: #ec7372;
     color: black;
@@ -57,8 +60,8 @@ export const DeletePedido = styled.button`
 
 
 export const BoxPedido = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 `;

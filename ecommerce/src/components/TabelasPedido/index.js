@@ -28,9 +28,7 @@ export function TabelaPedidos(props){
 
                                         <p>Status: {res.pedidoStatus === true ? 'Ativo' : 'Inativo'}</p>
                                         <p>Data do Pedido: {res.dataPedido}</p>
-                                        <p>Data da Entrega: {res.dataEntrega}</p>
                                         <p>Total: R$ {res.total},00</p>
-                                        <p> Itens: {res.itens}</p>
                                         <BoxButtons>
                                             <DeletePedido onClick={() => {
                                                 setDeletarPressed(e => true);
