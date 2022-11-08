@@ -16,7 +16,7 @@ height: 100%;
 `;
 
 export const CardPedido = styled.div`
-  width: 300px;
+  width: 320px;
   font-size: 1.6rem;
   padding: 20px;
   border-radius: 10px;  
