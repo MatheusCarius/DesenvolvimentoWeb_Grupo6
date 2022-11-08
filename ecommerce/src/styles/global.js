@@ -17,9 +17,8 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-block: 15rem;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     background-color: #FA8072;
 `;
 

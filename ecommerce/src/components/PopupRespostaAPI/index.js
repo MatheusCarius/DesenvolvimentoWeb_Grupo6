@@ -16,11 +16,11 @@ export const PopupRespostaAPI = (props) => {
     setTimeout(function(){
         const deleteAPI = async () => {
             try {
-            //   if(props.titulo === 'pedido') {
-            //     let id = parseInt(props.id)
-            //     const res = await api.delete('pedido', {params: {idPedido: id}});
-            //     setStatusAPI(res.status);
-             // } 
+              if(props.titulo === 'pedido') {
+                // let id = parseInt(props.id)
+                const res = await api.delete(`pedido/${props.id}`);
+                setStatusAPI(res.status);
+             } 
               if(props.titulo === 'categoria') {
                 // const id = parseInt(props.id)
                 const res = await api.delete(`categoria/${props.id}`);
@@ -62,7 +62,7 @@ export const PopupRespostaAPI = (props) => {
     <>
       <PopupStyle>
         <div className="popup-tela">
-          {/* {props.titulo === 'cliente' && props.status === 'sucesso' && props.tipo === 'registrar' ? <><p>Sucesso ao registrar {props.titulo}</p>
+          {/* { {props.titulo === 'cliente' && props.status === 'sucesso' && props.tipo === 'registrar' ? <><p>Sucesso ao registrar {props.titulo}</p>
             <button className="botaoConfirmar" onClick={() => navigate("/login")}>OK</button></> : ''
           }
           {props.titulo === 'cliente' && props.status === 'error' ? <>
@@ -88,11 +88,11 @@ export const PopupRespostaAPI = (props) => {
           {props.titulo === 'cliente' && props.tipo === 'deletarLoad' && isConfirmado === true && statusAPI === 400 ? <><h1>{errorMessageHead}</h1>
           <p>{errorMessage}</p>
           <button className="botaoDeletar" onClick={() => handleConfirmarErro()}>OK</button>
-          </> : ''
-          }
+          </> : '' */}
+          {/* } */}
           {props.titulo === 'pedido' && props.tipo === 'deletarLoad' && isConfirmado === false && statusAPI === 0 ? <><p>Você tem certeza que deseja deletar?</p>
             <div className="boxBotoes">
-              <button className="botaoDeletar" onClick={props.click}>Cancelar</button>
+              <button className="botaoCancelar" onClick={props.click}>Cancelar</button>
               <button className="botaoDeletar" onClick={() => {setConfirmado(true); processarDelete()}}>Deletar</button>
             </div>
             </>:''
@@ -109,19 +109,19 @@ export const PopupRespostaAPI = (props) => {
           <p>{errorMessage}</p>
           <button className="botaoDeletar" onClick={() => handleConfirmarErro()}>OK</button>
           </> : ''
-          } */}
-          {props.titulo === 'categoria' && props.tipo === 'deletarLoad' && isConfirmado === false && statusAPI === 0 ? <><p>Você tem certeza que deseja deletar?</p>
+          } 
+          {props.titulo === 'categoria'  && isConfirmado === false && statusAPI === 0 ? <><p>Você tem certeza que deseja deletar?</p>
             <div className="boxBotoes">
-              <button className="botaoDeletar" onClick={props.click}>Cancelar</button>
+              <button className="botaoCancelar" onClick={props.click}>Cancelar</button>
               <button className="botaoDeletar" onClick={() => {setConfirmado(true); processarDelete()}}>Deletar</button>
             </div>
             </>:''
           }
-          {props.titulo === 'categoria' && props.tipo === 'deletarLoad' && isConfirmado === true && statusAPI === 0 ? <><p>Deletando o/a {props.titulo}</p>
+          {props.titulo === 'categoria' && props.tipo === 'deletarLoad' && isConfirmado === true && statusAPI === 0 ? <><p>Deletando  {props.titulo}</p>
             <Loader/>
             </>:''
           }
-          {props.titulo === 'categoria' && props.tipo === 'deletarLoad' && isConfirmado === true && statusAPI === 200 ? <><p>O {props.titulo} {props.id} foi deletado com sucesso!</p>
+          {props.titulo === 'categoria' && props.tipo === 'deletarLoad' && isConfirmado === true && statusAPI === 200 ? <><p>A {props.titulo} {props.id} foi deletado com sucesso!</p>
           <button className="botaoDeletar" onClick={() => handleConfirmar()}>OK</button>
           </> : ''
           }
@@ -130,7 +130,7 @@ export const PopupRespostaAPI = (props) => {
           <button className="botaoDeletar" onClick={() => handleConfirmarErro()}>OK</button>
           </> : ''
           }
-          {/* {props.titulo === 'produto' && props.tipo === 'deletarLoad' && isConfirmado === false && statusAPI === 0 ? <><p>Você tem certeza que deseja deletar?</p>
+          {/* {{props.titulo === 'produto' && props.tipo === 'deletarLoad' && isConfirmado === false && statusAPI === 0 ? <><p>Você tem certeza que deseja deletar?</p>
             <div className="boxBotoes">
               <button className="botaoDeletar" onClick={props.click}>Cancelar</button>
               <button className="botaoDeletar" onClick={() => {setConfirmado(true); processarDelete()}}>Deletar</button>
@@ -149,7 +149,7 @@ export const PopupRespostaAPI = (props) => {
           <p>{errorMessage}</p>
           <button className="botaoDeletar" onClick={() => handleConfirmarErro()}>OK</button>
           </> : ''
-          } */}
+          } } */}
         </div>
       </PopupStyle>
     </>

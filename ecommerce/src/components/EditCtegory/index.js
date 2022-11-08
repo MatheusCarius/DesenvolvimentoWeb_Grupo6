@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { useNavigate } from "react-router-dom";
 import {api} from "../../Services/api/api";
 import{Loader} from "../Loader";
 import { CancelarButton, PopupStyle } from './styled';

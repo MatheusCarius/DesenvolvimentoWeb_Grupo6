@@ -41,11 +41,11 @@ export const TabelaCategorias = (props) => {
                         );
                     })}
                 </ListaCategorias>
-                <BotaoVoltar>
+                {/* <BotaoVoltar>
                     <button onClick={() => navigate("/painel_administrativo")}>
                         Voltar
                     </button>
-                </BotaoVoltar>
+                </BotaoVoltar> */}
             </BoxCategoria>
         </>
         // );

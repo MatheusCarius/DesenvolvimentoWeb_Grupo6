@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
- 
+  width: 100%;
   
   
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -13,8 +13,6 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 12px 25px;
-
   .title {
     font-weight: 600;
     font-size: 48px;

@@ -31,6 +31,7 @@ export const Popup = (props) => {
           console.log(error);
         }
       };
+      
       postCategoriaAPI();
     }
   }
@@ -42,7 +43,7 @@ export const Popup = (props) => {
           <p>Tem certeza que deseja criar uma uma {props.titulo}?</p>
                 <div className="botoes">
                     <button className="close" onClick={props.clickFechar}>Cancelar</button>
-                    <button className="close" onClick={() => {
+                    <button className="confirm" onClick={() => {
                         enviarInformacoes();
                         props.clickConfirmar()}}>Confirmar</button>
                 </div>
