@@ -29,7 +29,6 @@ export function ProductList() {
 
   return (
     <div>
-      <h1>Produtos</h1>
     
       {product.map((res) => {
         return (  

@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { BotaoVoltar, BoxPedido, ListaPedidos, CardPedido, DeletePedido, BoxButtons } from "./styled";
+import { BotaoVoltar, BoxPedido, ListaPedidos, CardPedido, DeletePedido, BoxButtons, Rodape } from "./styled";
 
 import { useNavigate } from "react-router-dom";
 import {PopupRespostaAPI} from "../PopupRespostaAPI"
@@ -28,7 +28,6 @@ export function TabelaPedidos(props){
 
                                         <p>Status: {res.pedidoStatus === true ? 'Ativo' : 'Inativo'}</p>
                                         <p>Data do Pedido: {res.dataPedido}</p>
-                                        <p>Total: R$ {res.total},00</p>
                                         <BoxButtons>
                                             <DeletePedido onClick={() => {
                                                 setDeletarPressed(e => true);
@@ -37,12 +36,13 @@ export function TabelaPedidos(props){
                                     </CardPedido>
                         }) : ''}                        
                 </ListaPedidos>
-                {/* <BotaoVoltar>
-                    <button onClick={() => navigate("/painel_administrativo")}>
+                <BotaoVoltar>
+                    <button onClick={() => navigate("/Administracao")}>
                         Voltar
                     </button>
-                </BotaoVoltar> */}
+                </BotaoVoltar>
             </BoxPedido>
+            
         </>
     );
 }

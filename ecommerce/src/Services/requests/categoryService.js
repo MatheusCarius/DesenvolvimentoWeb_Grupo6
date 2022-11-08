@@ -28,5 +28,6 @@ export default{
     postCategory,
     updateCategory,
     getCategoryById,
+    deleteCategory,
 
 }   

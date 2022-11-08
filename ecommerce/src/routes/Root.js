@@ -1,13 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { Categoria } from "../pages/CategoryADM";
 import { NotFound } from "../pages/NotFound";
 import { Sobre } from "../pages/sobre";
 import { AdmPedido } from "../pages/PedidoADM";
-import { Carrinho } from "../pages/Carrinho";
 import { ProductList } from "../pages/ProductList";
 import { ProductPage } from "../pages/ProductPage";
+import PainelAdministrativo from "../pages/Administrativo";
+import { Categoria } from "../pages/CategoryADM";
+import { AdmCliente } from "../pages/Cliente";
 
 export const PrivateRoutes = () => {
   function isAuthenticated() {
@@ -28,6 +29,14 @@ export const Root = () => {
       <Route path="/pedido" element={<AdmPedido />} />
       <Route path="/produto" element={<ProductList />} />
       <Route path="/produto-view" element={<ProductPage />} />
+      <Route path="/administracao" element={<PainelAdministrativo />} />
+      <Route path="/painel_administrativo/categoria" element={<Categoria />} />
+      <Route path="/painel_administrativo/pedido" element={<AdmPedido />} />
+      <Route path="/painel_administrativo/cliente" element={<AdmCliente />} />
+
+
+
+
 
       {/* <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/catalogo/:categoria&:id" element={<Categorias />} />

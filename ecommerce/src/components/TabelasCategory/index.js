@@ -41,42 +41,13 @@ export const TabelaCategorias = (props) => {
                         );
                     })}
                 </ListaCategorias>
-                {/* <BotaoVoltar>
-                    <button onClick={() => navigate("/painel_administrativo")}>
+                <BotaoVoltar>
+                    <button onClick={() => navigate("/Administracao")}>
                         Voltar
                     </button>
-                </BotaoVoltar> */}
+                </BotaoVoltar>
             </BoxCategoria>
         </>
-        // );
-        //    <>   
-        //     {isEditado? <EditarCategoria clickFechar={handleEditar} id={id} categoria={listaCategorias.filter(c => c.idCategoria === id)[0]}/> : ''}
-        //     {isDeletarPressed ? <PopupRespostaAPI titulo={'categoria'} tipo={'deletarLoad'} status={''} id={id} click={handleClickDeletar}/> : ''}
-        //    <BoxCategoria>
-        //         <div>   
-        //     {listaCategorias.map(res => {
-        //         return (
-        //             <ListaCategorias key={res.id}>
-        //                 <CardCategoria >
-        //                     <Text>Id Categoria: {res.id}</Text>
-        //                     <Text>Nome da Categoria: {res.nome}</Text>
-        //                     <Text>Descrição da Categoria: {res.descricao}</Text>
-        //                     <BoxButtons>
-        //                         <EditCategoria onClick={() => { setEditado(!isEditado); setId(e => res.idCategoria) }}>Editar</EditCategoria>
-        //                         <DeleteCategoria onClick={() => {
-        //                             setDeletarPressed(e => true);
-        //                             setId(e => res.id)
-        //                         }}>Excluir</DeleteCategoria>
-        //                     </BoxButtons>
-        //                 </CardCategoria>
-        //             </ListaCategorias>
-        //         )
-        //     })}
-        //     </div>
-
-
-
-        // </BoxCategoria>
-        // </>
+       
     );
 }

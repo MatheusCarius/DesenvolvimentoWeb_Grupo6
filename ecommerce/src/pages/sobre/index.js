@@ -23,11 +23,10 @@ export const Sobre = (props) => {
         <>
 
         <SobreMain>
-        <button className="buttonHome"  style={{  width: 60, height: 30, marginTop: 10 }} onClick={handleGoProducts}>Home</button>
        
 
         <Container className='sobre'>
-            <Titulo className='titulo'> Serra </Titulo>
+            <Titulo className='titulo'> Serratec 2022 </Titulo>
             <SobreDescricao>
                 Trabalho Final desenvolvido como requisito para aprovação da
                 disciplina desenvolvimento web!

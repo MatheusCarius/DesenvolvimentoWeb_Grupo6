@@ -3,10 +3,12 @@ import BadRequest from "../../components/BadRequest"
 import { TabelaPedidos } from "../../components/TabelasPedido";
 import {Container, Titulo} from "../../styles/global"
 import { api } from "../../Services/api/api";
+import { useNavigate } from "react-router-dom";
 
 export function AdmPedido(props) {
     const [listaPedidos, setListaPedidos] = useState([]);
     const [statusAPI, setStatusAPI] = useState(0)
+    const navigate = useNavigate();
 
     useEffect(() => {
         carregarAPI();

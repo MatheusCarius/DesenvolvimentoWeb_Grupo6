@@ -16,7 +16,7 @@ height: 100%;
 `;
 
 export const CardPedido = styled.div`
-  width: 300px;
+  width: 320px;
   font-size: 1.6rem;
   padding: 20px;
   border-radius: 10px;  
@@ -74,17 +74,31 @@ export const BotaoVoltar = styled.div`
   padding-top: 5em;
   display: flex;
   justify-content: center;
+  
+  
 
   button {
-    background-color: var(--secondary-color);
+    
+    cursor: pointer;
     width: 8em;
     height: 2.5em;
     font-size: 2em;
     border-radius: 10px;
     transition: 500ms;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin-bottom: 20px;
+color: white;
   }
 
   button:hover {
-    background-color: var(--primary-color);
+   color: gray
   }
+`;
+
+export const Rodape = styled.footer`
+background-color: black;
 `;
