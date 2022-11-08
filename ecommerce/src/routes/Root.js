@@ -6,6 +6,8 @@ import { NotFound } from "../pages/NotFound";
 import {Sobre} from "../pages/sobre";
 import {AdmPedido} from '../pages/PedidoADM';
 import { Carrinho } from '../pages/Carrinho';
+import { ProductList} from '../pages/ProductList';
+import { ProductPage} from '../pages/ProductPage';
 
 
 export const PrivateRoutes = () => {
@@ -27,6 +29,9 @@ export const Root =() =>{
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/pedido" element={<AdmPedido/>}/>
+        <Route path='/produto' element={<ProductList />}/>
+                <Route path='/produto-view' element={<ProductPage />}/>
+            
         {/* <Route path="/carrinho" element={<Carrinho/>}/>
         <Route path="/catalogo/:categoria&:id" element={<Categorias />} />
         <Route path="/catalogo/:categoria&:idCategoria/:idProduto" element={<Produto />} />
