@@ -7,8 +7,24 @@ const getProductsById = (id) => {
     return api.get(`produto/${id}`)
 }
 
+const postProduct = (product) => {
+
+    return api.post(`produto`, product)
+}
+
+const updateProduct = (id,) => {
+    return api.put(`produto/${id}`)
+}
+
+const deleteProduct = (id) =>{
+    return api.delete(`produto/${id}`)
+}
+
 
 export default {
     getProducts,
-    getProductsById
+    getProductsById,
+    postProduct,
+    updateProduct,
+    deleteProduct
 }
