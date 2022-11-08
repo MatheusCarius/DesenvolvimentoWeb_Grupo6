@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BotaoVoltar, BoxButtons, BoxCategoria, CardCategoria, DeleteCategoria, EditCategoria, ListaCategorias } from "./styled";
 import { Text } from "./styled";
 import { useNavigate } from "react-router-dom";
-import { EditarCategoria } from "../../components/EditCtegory";
+import { EditarCategoria } from "../EditCtegory"
 import { PopupRespostaAPI } from "../../components/PopupRespostaAPI";
 
 export const TabelaCategorias = (props) => {

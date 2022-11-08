@@ -108,51 +108,6 @@ export const NavBar = styled.ul`
 
 `;
 
-
-export const ContainerTituloSubtitulo = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 95vw;
-`;
-
-
-
-export const Titulo = styled.h1`
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
-    align-items: center;
-
-    position: relative;
-    display: inline;
-    color:tomato
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.2rem;
-
-    @media (min-width: 1024px) {
-        margin-top: 12rem;
-    }
-`;
-
-export const Subtitulo = styled.h3`
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    color:tomato;
-    text-transform: uppercase;
-
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2.0rem;
-    text-shadow: 3px 3px 10px black;
-`;
-
-
 export const SobreDescricao = styled.p`
 
   color: black;

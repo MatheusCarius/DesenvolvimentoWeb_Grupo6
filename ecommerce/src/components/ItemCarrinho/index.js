@@ -1,6 +1,6 @@
 import React from "react";
 import { api } from "../../Services/api/api";
-import { ButtonDiv, Descricao, Imagem, ItemContainer, DeletarButao } from "./style";
+import { ButtonDiv, Descricao, Imagem, ItemContainer, DeletarButao } from "./styled";
 
 
 export const ItemCarrinho = ({ produto, itemPedido }) => {

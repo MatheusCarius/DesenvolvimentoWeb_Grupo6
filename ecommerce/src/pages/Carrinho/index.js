@@ -3,7 +3,7 @@ import { Container, Titulo } from "../../styles/global";
 import { api } from "../../Services/api/api";
 import { ItemCarrinho } from "../../components/ItemCarrinho";
 import EmptyCarrinho from "../../components/EmptyCarrinho"
-import { CarrinhoContainer, ConfirmarPedido, Descricao } from "./style";
+import { CarrinhoContainer, ConfirmarPedido, Descricao } from "./styled";
 
 
 export const Carrinho = () => {
