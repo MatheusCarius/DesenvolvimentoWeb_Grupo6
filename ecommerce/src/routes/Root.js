@@ -10,19 +10,14 @@ import { Carrinho } from '../pages/Carrinho'
 
 
 export const PrivateRoutes = () => {
-    function isAuthenticated () {
-  
-      if(localStorage.getItem('admin') !== null){
-        return true;
-      }else{
-        return false;
-      }  
+  function isAuthenticated() {
+    if (localStorage.getItem("admin") !== null) {
+      return true;
+    } else {
+      return false;
     }
-  
-    return (  
-      isAuthenticated() ? <Outlet/> : <Navigate to="/admlogin"/>
-    )
-  } 
+  }
+}
 
 export const Root =() =>{
     
@@ -48,4 +43,4 @@ export const Root =() =>{
    
         </Routes>
     )
-  }
+    }
