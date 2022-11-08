@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoxBadStyle } from './style';
+import { BoxBadStyle } from './styled';
 
 function BadRequest(props) {
     return (

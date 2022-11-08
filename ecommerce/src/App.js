@@ -1,16 +1,14 @@
-
-import { GlobalStyle } from "./styles/global";
+import { BrowserRouter } from "react-router-dom";
 import { Root } from "./routes/Root";
-import { BrowserRouter } from 'react-router-dom';
- export function App() {
+import { GlobalStyle } from "./styles/global";
+
+export function App() {
   return (
-   
-    <BrowserRouter>
-    <Root/> 
-    <GlobalStyle />
-    </BrowserRouter>
-    
-    
-   
+    <>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Root />
+      </BrowserRouter>
+    </>
   );
 }
