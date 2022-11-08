@@ -30,29 +30,21 @@ export function ProductList() {
   return (
     <div>
       <h1>Produtos</h1>
+    
       {product.map((res) => {
-        return (
-         <ContainerProduto>
-          <div key={res.id}> 
-          <ProdutoImg img src={res.fotoLink} alt="Foto do produto" width="200px" />
-            <ProdutoDescricao>
-            <span>Serial: {res.id}</span>
+        return (  
+        <ContainerProduto>
+          <div key={res.id}>
+            <ProdutoImg img src={res.fotoLink} alt="Foto do produto" width="200px" />
             <br></br>
-            <span>Nome: {res.nome}</span>
+            <span>{res.nome}</span>
             <br></br>
-            <span>Descrição: {res.descricao}</span>
+            <span>{res.nomeCategoria}</span>
             <br></br>
-            <span>QTD: {res.qtdEstoque}</span>
+            <span>R$ {res.valor},00</span>
             <br></br>
-            <span>Valor: {res.valor}</span>
+            <ProdutoButton button onClick={()=> handleSelectId(res.id)}>Ver Produto</ProdutoButton>
             <br></br>
-            <span>Categoria: {res.nomeCategoria}</span>
-            <br></br>
-            <span>Funcionário: {res.nomeFuncionario}</span>
-            <br></br>
-            <span>Data Fabricação: {res.dataFabricacao}</span>
-            </ProdutoDescricao>
-          <ProdutoButton button onClick={()=> handleSelectId(res.id)}>Ver Produto</ProdutoButton>
           </div>
           </ContainerProduto>
         );

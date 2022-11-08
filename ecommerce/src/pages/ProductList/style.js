@@ -6,12 +6,13 @@ flex-direction: column;
 justify-content:center;
 padding: 2rem;
 text-align: center;
-float:right;
+float:left;
 border-style:solid;
 margin:1rem;
 margin-top: 3em;
 background-color: #1a1a1a;
 color:white;
+border-radius:20px;
 
 `;
 export const ProdutoImg = styled.img`
